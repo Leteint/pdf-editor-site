@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PDF Editor — Professional PDF Editor for Windows</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="logo.png">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -54,7 +56,11 @@
     color: var(--text);
     white-space: nowrap;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
   }
+  .nav-logo img { height: 28px; width: auto; display: block; }
   .nav-logo:hover { text-decoration: none; color: var(--blue); }
 
   .nav-links {
@@ -669,10 +675,11 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">📄 PDF Editor</a>
+  <a href="#" class="nav-logo"><img src="logo.png" alt="PDF Editor logo">PDF Editor</a>
   <ul class="nav-links">
     <li><a href="#features" data-i18n="nav_features">Features</a></li>
     <li><a href="#pricing" data-i18n="nav_pricing">Pricing</a></li>
+    <li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li>
     <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
     <li><a href="https://github.com/Leteint/pdf-editor/issues" target="_blank" rel="noopener" data-i18n="nav_support">Support</a></li>
   </ul>
@@ -1138,6 +1145,7 @@ const LANGS = {
   fr: {
     nav_features: "Fonctionnalités",
     nav_compare: "Comparatif",
+    nav_gallery: "Galerie",
     nav_pricing: "Tarifs",
     nav_faq: "FAQ",
     nav_support: "Support",
@@ -1260,6 +1268,7 @@ const LANGS = {
   en: {
     nav_features: "Features",
     nav_compare: "Compare",
+    nav_gallery: "Gallery",
     nav_pricing: "Pricing",
     nav_faq: "FAQ",
     nav_support: "Support",
@@ -1382,6 +1391,7 @@ const LANGS = {
   es: {
     nav_features: "Funciones",
     nav_compare: "Comparar",
+    nav_gallery: "Galería",
     nav_pricing: "Precios",
     nav_faq: "FAQ",
     nav_support: "Soporte",
@@ -1504,6 +1514,7 @@ const LANGS = {
   de: {
     nav_features: "Funktionen",
     nav_compare: "Vergleich",
+    nav_gallery: "Galerie",
     nav_pricing: "Preise",
     nav_faq: "FAQ",
     nav_support: "Support",
@@ -1626,6 +1637,7 @@ const LANGS = {
   pt: {
     nav_features: "Funcionalidades",
     nav_compare: "Comparar",
+    nav_gallery: "Galeria",
     nav_pricing: "Preços",
     nav_faq: "FAQ",
     nav_support: "Suporte",
@@ -1748,6 +1760,7 @@ const LANGS = {
   ru: {
     nav_features: "Функции",
     nav_compare: "Сравнение",
+    nav_gallery: "Галерея",
     nav_pricing: "Цены",
     nav_faq: "FAQ",
     nav_support: "Поддержка",
